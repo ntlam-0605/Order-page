@@ -7,48 +7,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/order.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- box-icon css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <div class="navbar-container" id="navbar-container">
-            <div class="row menu-des">
-                <div class="col-12 col-md-1">
-                    <div class="box-left-menu">
-                        <div class="logo-cam">
-                            <a href="https://phanexpress.com/"><img src="image/Phan_logoEx.svg" alt="logo Lau Phan"></a>
+    <div class="header">
+        <div class="container main-menu">
+            <div class="row p-2">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"><img src="image/Phan_logoEx.svg"
+                                    class="img-logo img-fluid"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">☰</span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Đặt bàn</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Đặt hàng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Ưu đãi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Địa chỉ</a>
+                                    </li>
+                                    <li class="nav-item-last">
+                                        <a class="btn btn-outline-danger rounded-pill fs-5" href="#loginOTP">Đăng nhập <i class="bx bx-user"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-8">
-                    <div class="box-right-menu">
-                        <ul class="main-menu" id="myMenu">
-                            <li>
-                                <a href="#">Trang chủ</a>
-                            </li>
-                            <li>
-                                <a href="/dat-ban" class="activelink">Đặt bàn</a>
-                            </li>
-                            <li>
-                                <a href="/dat-hang">Đặt hàng</a>
-                            </li>
-                            <li>
-                                <a href="/uu-dai">Ưu đãi</a>
-                            </li>
-                            <li>
-                                <a href="/dia-chi">Địa chỉ</a>
-                            </li>			
-                        </ul>
-                    </div>				
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="box-btn"><a class="btn-dangnhap" href="#login">Đăng nhập <img style="margin-left: 10px;margin-top: 1px;" src="image/user.svg"></a></div>
+                    </nav>
                 </div>
             </div>
-            
         </div>
-    </header>
+    </div>
     <div class="lp-order-page">
         <div class="container">
             <div class="row">
@@ -286,7 +296,6 @@
              </div>
          </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
